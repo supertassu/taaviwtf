@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        {{ if .Title }}
+        {{ .Title }} &ndash;
+        {{ end }}
+        {{ .Site.Title }}
+    </title>
+
+    <link rel="stylesheet" href="https://typeof.net/Iosevka/iosevka/webfont.css">
+    
+    {{ if .Site.IsServer }}
+    {{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/dev/postcss.config.js") }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    {{ else }}
+    {{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js") | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+    {{ end }}
+</head>
+
+<body class="bg-black text-white font-mono">
+    <header class="w-full p-4">
+        <nav class="flex justify-between">
+            <div>
+                <a href="{{ .Site.Home.Permalink }}" class="bg-pink-700 p-2 hover:underline">
+                    {{ .Site.Title }}
+                </a>
+            </div>
+
+            <div class="flex">
+                {{ range .Site.Sections }}
+                    <a href="{{ .Permalink }}"
+                        class="link mx-2">{{ .Title }}</a>
+                {{ end }}
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto max-md:px-4">
+        {{- block "main" . }}{{- end }}
+
+        <footer class="mt-4 text-xs text-gray-700">
+            <p>
+                &mdash;&mdash;&mdash;&mdash;&mdash;
+            </p>
+
+            <p>
+                &copy; Taavi Väänänen 2019. All rights reserved.
+            </p>
+
+            <p>
+                made with
+                <a href="https://gohugo.io" class="link">Hugo</a>,
+                <a href="https://tailwindcss.com" class="link">TailwindCSS</a>
+                and a text editor.
+            </p>
+        </footer>
+    </main>
+
+</body>
+</html>

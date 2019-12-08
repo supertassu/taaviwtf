@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.link:not(:hover) {
+    @apply underline;
+}
+
+.rich-text {
+    & > p {
+        @apply py-2;
+    }
+
+    & > a:not(:hover) {
+        @apply underline;
+    }
+
+    & > h1 {
+        @apply text-4xl text-gray-300;
+    }
+
+    & > h2 {
+        @apply text-2xl text-gray-300;
+    }
+
+    & > h3 {
+        @apply text-xl text-gray-300;
+    }
+}
