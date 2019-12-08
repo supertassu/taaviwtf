@@ -1,5 +1,5 @@
 ---
-author: Dirk Olbrich
+author: tee
 title: First Post
 date: 2019-05-13
 ---

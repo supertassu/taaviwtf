@@ -1,6 +1,9 @@
 {{ define "main" }}
 <article class="text-gray-400">
-    <h1 class="font-bold text-3xl text-gray-700">{{ .Title }}</h1>
+    <h1 class="font-bold text-4xl text-gray-300">{{ .Title }}</h1>
+
+    <span class="text-pink-700">►</span> Written by <span class="text-white font-bold">{{ .Param "author" }}</span> on <span class="text-white font-bold">{{ .PublishDate.Format "January 2, 2006" }}</span>.
+    
     <div class="rich-text">
         {{ .Content }}
     </div>

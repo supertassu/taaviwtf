@@ -1,10 +1,23 @@
 {{ define "main" }}
+
+<div>
+    <h1 class="font-bold text-4xl text-gray-300">{{ .Title }}</h1>
+    
+    <div class="rich-text">
+        {{ .Content }}
+    </div>
+</div>
+
+<p class="text-gray-700 text-xs">
+    &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
+</p>
+
 {{ range .Pages }}
     <article class="text-gray-400 mb-4">
         <h1 class="font-bold text-3xl text-gray-300"><a href="{{ .Permalink }}" class="hover:underline">{{ .Title }}</a></h1>
         
         <p>
-            <span class="text-pink-700">►</span> Written by <span class="text-pink-700">{{ .Param "author" }}</span> on <span class="text-white">{{ .PublishDate.Format "January 2, 2006" }}</span>.
+            <span class="text-pink-700">►</span> Written by <span class="text-white font-bold">{{ .Param "author" }}</span> on <span class="text-white font-bold">{{ .PublishDate.Format "January 2, 2006" }}</span>.
         </p>
 
         <div class="rich-text mt-2">

@@ -12,7 +12,7 @@
     </title>
 
     <link rel="stylesheet" href="https://typeof.net/Iosevka/iosevka/webfont.css">
-    
+
     {{ if .Site.IsServer }}
     {{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/dev/postcss.config.js") }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
@@ -43,7 +43,7 @@
     <main class="container mx-auto max-md:px-4">
         {{- block "main" . }}{{- end }}
 
-        <footer class="mt-4 text-xs text-gray-700">
+        <footer class="mt-4 mb-8 text-xs text-gray-700">
             <p>
                 &mdash;&mdash;&mdash;&mdash;&mdash;
             </p>
@@ -53,10 +53,21 @@
             </p>
 
             <p>
-                made with
+                Made with
                 <a href="https://gohugo.io" class="link">Hugo</a>,
-                <a href="https://tailwindcss.com" class="link">TailwindCSS</a>
+                <a href="https://tailwindcss.com" class="link">Tailwind</a>
                 and a text editor.
+            </p>
+
+            <p>
+                Send your e-mails to mailbox at this domain
+            </p>
+
+            <p>
+                Also view my profile at
+                <a href="https://github.com/supertassu" class="link">github</a>
+                or
+                <a href="https://keybase.io/tassu" class="link">keybase</a>.
             </p>
         </footer>
     </main>
