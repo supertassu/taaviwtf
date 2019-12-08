@@ -13,7 +13,7 @@ module.exports = {
         require('postcss-import')(),
         require('tailwindcss')('./themes/castor/tailwind.config.js'),
         require('@fullhuman/postcss-purgecss')({
-            content: [themeDir + 'layouts/**/*.html'],
+            content: ['./themes/castor/layouts/**/*.html'],
             extractors: [
                 {
                     extractor: TailwindExtractor,
