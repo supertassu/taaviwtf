@@ -11,6 +11,8 @@
         {{ .Site.Title }}
     </title>
 
+    {{ template "_internal/opengraph.html" . }}
+
     {{ if .Site.IsServer }}
     {{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/dev/postcss.config.js") }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
