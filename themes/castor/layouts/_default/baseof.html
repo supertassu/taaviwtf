@@ -23,24 +23,24 @@
 </head>
 
 <body class="bg-black text-white font-mono">
-    <header class="w-full p-4">
-        <nav class="flex justify-between">
-            <div>
-                <a href="{{ .Site.Home.Permalink }}" class="bg-pink-700 p-2 hover:underline">
-                    {{ .Site.Title }}
-                </a>
-            </div>
+    <div class="container mx-auto max-md:px-4">
+        <header class="w-full py-8">
+            <nav class="flex justify-between">
+                <div>
+                    <a href="{{ .Site.Home.Permalink }}" class="bg-pink-700 p-2 hover:underline">
+                        {{ .Site.Title }}
+                    </a>
+                </div>
+    
+                <div class="flex">
+                    {{ range .Site.Sections }}
+                        <a href="{{ .Permalink }}"
+                            class="link mx-2">{{ .Title }}</a>
+                    {{ end }}
+                </div>
+            </nav>
+        </header>
 
-            <div class="flex">
-                {{ range .Site.Sections }}
-                    <a href="{{ .Permalink }}"
-                        class="link mx-2">{{ .Title }}</a>
-                {{ end }}
-            </div>
-        </nav>
-    </header>
-
-    <main class="container mx-auto max-md:px-4">
         {{- block "main" . }}{{- end }}
 
         <footer class="mt-4 mb-8 text-xs text-gray-700">
@@ -70,7 +70,7 @@
                 <a href="https://keybase.io/tassu" class="link">keybase</a>.
             </p>
         </footer>
-    </main>
+    </div>
 
 </body>
 </html>
