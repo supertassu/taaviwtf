@@ -11,8 +11,6 @@
         {{ .Site.Title }}
     </title>
 
-    <link rel="stylesheet" href="https://typeof.net/Iosevka/iosevka/webfont.css">
-
     {{ if .Site.IsServer }}
     {{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/dev/postcss.config.js") }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
@@ -71,6 +69,5 @@
             </p>
         </footer>
     </div>
-
 </body>
 </html>

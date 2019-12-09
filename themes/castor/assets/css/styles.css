@@ -1,3 +1,4 @@
+@import './themes/castor/assets/css/fonts';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
