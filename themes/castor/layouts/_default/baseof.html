@@ -11,6 +11,7 @@
         {{ .Site.Title }}
     </title>
 
+    <meta property="og:site_name" content="{{ .Site.Title }}">
     {{ template "_internal/opengraph.html" . }}
 
     {{ if .Site.IsServer }}
@@ -43,7 +44,7 @@
 
         {{- block "main" . }}{{- end }}
 
-        <footer class="mt-4 mb-8 text-xs text-gray-700">
+        <footer class="mt-4 mb-8 text-xs text-gray-600">
             <p>
                 &mdash;&mdash;&mdash;&mdash;&mdash;
             </p>
