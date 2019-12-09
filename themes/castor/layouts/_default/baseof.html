@@ -22,9 +22,9 @@
     {{ end }}
 </head>
 
-<body class="bg-black text-white font-mono">
+<body class="bg-black text-white font-mono border-t-8 border-pink-700">
     <div class="container mx-auto max-md:px-4">
-        <header class="w-full py-8">
+        <header class="w-full py-12">
             <nav class="flex justify-between">
                 <div>
                     <a href="{{ .Site.Home.Permalink }}" class="bg-pink-700 p-2 hover:underline">
@@ -35,7 +35,7 @@
                 <div class="flex">
                     {{ range .Site.Sections }}
                         <a href="{{ .Permalink }}"
-                            class="link mx-2">{{ .Title }}</a>
+                            class="link mx-2 hover:text-pink-400">{{ .Title }}</a>
                     {{ end }}
                 </div>
             </nav>
