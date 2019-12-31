@@ -12,16 +12,16 @@ module.exports = {
     plugins: [        
         require('postcss-import')(),
         require('tailwindcss')('./themes/castor/tailwind.config.js'),
-        require('@fullhuman/postcss-purgecss')({
-            content: ['./themes/castor/layouts/**/*.html'],
-            extractors: [
-                {
-                    extractor: TailwindExtractor,
-                    extensions: ['html']
-                }
-            ],
-            fontFace: true
-        }),    
+        //require('@fullhuman/postcss-purgecss')({
+        //    content: ['./themes/castor/layouts/**/*.html'],
+        //    extractors: [
+        //        {
+        //            extractor: TailwindExtractor,
+        //            extensions: ['html']
+        //        }
+        //    ],
+        //    fontFace: true
+        //}),    
         require('postcss-nesting')(),
         require('autoprefixer')({
             grid: true
