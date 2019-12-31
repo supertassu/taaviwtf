@@ -46,7 +46,7 @@ hr {
     }
 
     & ul {
-        @apply pl-2;
+        @apply list-none pl-2;
 
         & li {
             &::before {
