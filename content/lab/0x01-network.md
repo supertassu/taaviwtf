@@ -1,7 +1,6 @@
 ---
 title: "[0x01] The lab network"
 date: 2019-12-31
-draft: true
 weight: 2
 ---
 
