@@ -5,7 +5,7 @@ draft: true
 weight: 2
 ---
 
-As explained in the [the series overview]({{< ref "/lab/0x00-overview.md" >}}), I use the lab to experiement with enterprise gear so my home network is - let's say - advanced.
+As explained in the [the series overview]({{< ref "0x00-overview.md" >}}), I use the lab to experiement with enterprise gear so my home network is - let's say - advanced.
 
 ## The hardware
 
