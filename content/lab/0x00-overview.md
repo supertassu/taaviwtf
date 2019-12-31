@@ -5,7 +5,7 @@ date: 2019-12-31 # last update date
 ---
 
 I use my lab to experiement or play around with stuff that I can't do elsewhere, for example enterprise networking and servers and all that kind of stuff.
-I am a teenager so I don't haver a real production environment that I can play around with. I also host services that I don't 
+I am a teenager so I don't haver a real production environment that I can play around with. I also host services locally that I don't want to exist in the cloud.
 
 This article will work as a directory for all articles related to my lab.
 
