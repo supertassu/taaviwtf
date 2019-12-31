@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .link:not(:hover) {
-    @apply underline text-pink-100;
+    @apply underline;
 }
 
 .code {
@@ -22,7 +22,7 @@ hr {
     }
 
     & a:not(:hover) {
-        @apply underline text-pink-100;
+        @apply underline;
     }
 
     & h1 {
