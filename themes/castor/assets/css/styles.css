@@ -15,6 +15,7 @@ hr {
     @apply text-gray-500;
 }
 
+/* purgecss start ignore */
 .rich-text {
     & p {
         @apply py-2;
@@ -55,3 +56,4 @@ hr {
         }
     }
 }
+/* purgecss end ignore */
