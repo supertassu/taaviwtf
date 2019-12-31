@@ -11,7 +11,7 @@ This article will work as a directory for all articles related to my lab.
 
 I expect that at least the following parts will exist at some point:
 
-* [[0x01]]({{< ref "/lab/0x01-network.md" >}}) Network setup overview (routing, VLANs, etc)
+* [[0x01]]({{< ref "0x01-network.md" >}}) Network setup overview (routing, VLANs, etc)
 * Hypervisor setup and basic service overview
 * Detailed posts for some advanced services, such as
   * Puppet
