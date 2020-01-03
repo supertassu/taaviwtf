@@ -1,32 +1,33 @@
 {{ define "main" }}
-
-<div>
-    <h1 class="font-bold text-4xl text-gray-300">{{ .Title }}</h1>
-    
-    <div class="rich-text">
-        {{ .Content }}
-    </div>
-</div>
-
-<p class="text-gray-700 text-xs">
-    &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
-</p>
-
-{{ range .Pages }}
-    <article class="text-gray-400 mb-4 mt-2">
-        <h1 class="font-bold text-3xl text-gray-300"><a href="{{ .Permalink }}" class="hover:underline">{{ .Title }}</a></h1>
+    <div>
+        <h1 class="font-bold text-4xl text-gray-300">{{ .Title }}</h1>
         
-        {{ if or (isset .Params "author") (ne (.PublishDate.Format "2006-01-02") "0001-01-01") }}
-        <p>
-            <span class="text-pink-700">►</span> Written{{ if isset .Params "author" }} by <span class="text-white font-bold">{{ .Param "author" }}</span>{{ end }}{{ if ne (.PublishDate.Format "2006-01-02") "0001-01-01" }} on <span class="text-white font-bold">{{ .PublishDate.Format "January 2, 2006" }}</span>{{ end }}.
-        </p>
-        {{ end }}
-
-        <div class="rich-text mt-2">
-            {{ .Summary }}
+        <div class="rich-text">
+            {{ .Content }}
         </div>
+    </div>
 
-        <a href="{{ .Permalink }}" class="link text-xs text-gray-300">Read in {{ .ReadingTime }} mins</a>
-    </article>
-{{ end }}
+    <p class="text-gray-700 text-xs">
+        &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
+    </p>
+
+    {{ range .Pages }}
+        {{ if not .Params.hidden }}
+            <article class="text-gray-400 mb-4 mt-2">
+                <h1 class="font-bold text-3xl text-gray-300"><a href="{{ .Permalink }}" class="hover:underline">{{ .Title }}</a></h1>
+                
+                {{ if or (isset .Params "author") (ne (.PublishDate.Format "2006-01-02") "0001-01-01") }}
+                    <p>
+                        <span class="text-pink-700">►</span> Written{{ if isset .Params "author" }} by <span class="text-white font-bold">{{ .Param "author" }}</span>{{ end }}{{ if ne (.PublishDate.Format "2006-01-02") "0001-01-01" }} on <span class="text-white font-bold">{{ .PublishDate.Format "January 2, 2006" }}</span>{{ end }}.
+                    </p>
+                {{ end }}
+
+                <div class="rich-text mt-2">
+                    {{ .Summary }}
+                </div>
+
+                <a href="{{ .Permalink }}" class="link text-xs text-gray-300">Read in {{ .ReadingTime }} mins</a>
+            </article>
+        {{ end }}
+    {{ end }}
 {{ end }}

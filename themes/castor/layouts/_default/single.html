@@ -1,15 +1,15 @@
 {{ define "main" }}
-<article class="text-gray-400">
-    <h1 class="font-bold text-4xl text-gray-300">{{ .Title }}</h1>
+    <article class="text-gray-400">
+        <h1 class="font-bold text-4xl text-gray-300">{{ .Title }}</h1>
 
-    {{ if or (isset .Params "author") (ne (.PublishDate.Format "2006-01-02") "0001-01-01") }}
-    <p>
-        <span class="text-pink-700">►</span> Written{{ if isset .Params "author" }} by <span class="text-white font-bold">{{ .Param "author" }}</span>{{ end }}{{ if ne (.PublishDate.Format "2006-01-02") "0001-01-01" }} on <span class="text-white font-bold">{{ .PublishDate.Format "January 2, 2006" }}</span>{{ end }}.
-    </p>
-    {{ end }}
+        {{ if or (isset .Params "author") (ne (.PublishDate.Format "2006-01-02") "0001-01-01") }}
+            <p>
+                <span class="text-pink-700">►</span> Written{{ if isset .Params "author" }} by <span class="text-white font-bold">{{ .Param "author" }}</span>{{ end }}{{ if ne (.PublishDate.Format "2006-01-02") "0001-01-01" }} on <span class="text-white font-bold">{{ .PublishDate.Format "January 2, 2006" }}</span>{{ end }}.
+            </p>
+        {{ end }}
 
-    <div class="rich-text">
-        {{ .Content }}
-    </div>
-</article>
+        <div class="rich-text">
+            {{ .Content }}
+        </div>
+    </article>
 {{ end }}

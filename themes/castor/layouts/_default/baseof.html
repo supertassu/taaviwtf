@@ -35,8 +35,10 @@
     
                 <div class="flex">
                     {{ range .Site.Sections }}
+                        {{ if not .Params.hidden }}
                         <a href="{{ .Permalink }}"
                             class="link mx-2 hover:text-pink-400">{{ .Title }}</a>
+                        {{ end }}
                     {{ end }}
                 </div>
             </nav>

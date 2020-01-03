@@ -37,7 +37,12 @@ hr {
         @apply text-xl text-gray-300 font-bold mt-2;
     }
 
-    & code {
+    & pre {
+        @apply p-2 bg-gray-900;
+        background-color: theme('colors.gray.900') !important;
+    }
+
+    & :not(pre) > code {
         @apply code;
     }
 
