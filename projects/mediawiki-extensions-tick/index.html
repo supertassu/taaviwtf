@@ -1,0 +1,21 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>MediaWiki extensions: Tick &ndash;
+taavi.wtf</title><meta property=og:site_name content=taavi.wtf><meta property=og:title content="MediaWiki extensions: Tick"><meta property=og:description content="Adds a tag that allows an user to &ldquo;tick&rdquo; it with current timestamp
+ Installing # Clone the repo $ git clone https://git.majava.org/mayktek/mediawiki-extensions-Tick.git /var/www/html/mediawiki/extensions/Tick # Add to LocalSettings.php $ echo &#34;wfLoadExtension( 'Tick' );&#34; &gt;&gt; /var/www/html/mediawiki/LocalSettings.php # Run database migrations $ php /var/www/html/mediawiki/maintenance/update.php # Possibly then configure user right (tick). By default it's granted to autoconfirmed users  Usage # Add a Tick {{#tick: tick_id | Description shown}} # Add a Tick all button {{#submit_selected_ticks: }}  API instructions available on [[Special:ApiSandbox]]."><meta property=og:type content=article><meta property=og:url content=https://taavi.wtf/projects/mediawiki-extensions-tick/><link rel=stylesheet href=https://taavi.wtf/css/styles.min.8cb46aad17ccc8013267ddc921b441d5fbb3364f874ce269f6d94a72d6937d85.css integrity="sha256-jLRqrRfMyAEyZ93JIbRB1fuzNk&#43;HTOJp9tlKctaTfYU="></head><body class="bg-black text-white font-mono border-t-8 border-pink-700"><div class="container mx-auto max-md:px-4"><header class="w-full py-12"><nav class="flex justify-between"><div><a href=https://taavi.wtf/ class="bg-pink-700 p-2 hover:underline">taavi.wtf</a></div><div class=flex><a href=https://taavi.wtf/lab/ class="link mx-2 hover:text-pink-400">Lab</a>
+<a href=https://taavi.wtf/posts/ class="link mx-2 hover:text-pink-400">Blog</a></div></nav></header><article class=text-gray-400><h1 class="font-bold text-4xl text-gray-300">MediaWiki extensions: Tick</h1><div class=rich-text><blockquote><p>Adds a tag that allows an user to &ldquo;tick&rdquo; it with current timestamp</p></blockquote><h2 id=installing>Installing</h2><pre><code class=language-bash># Clone the repo
+$ git clone https://git.majava.org/mayktek/mediawiki-extensions-Tick.git /var/www/html/mediawiki/extensions/Tick
+# Add to LocalSettings.php
+$ echo &quot;wfLoadExtension( 'Tick' );&quot; &gt;&gt; /var/www/html/mediawiki/LocalSettings.php
+# Run database migrations
+$ php /var/www/html/mediawiki/maintenance/update.php
+# Possibly then configure user right (tick). By default it's granted to autoconfirmed users
+</code></pre><h2 id=usage>Usage</h2><pre><code># Add a Tick
+{{#tick: tick_id | Description shown}}
+# Add a Tick all button
+{{#submit_selected_ticks: }}
+</code></pre><p>API instructions available on [[Special:ApiSandbox]].</p></div></article><footer class="mt-4 mb-8 text-xs text-gray-600"><p>&mdash;&mdash;&mdash;&mdash;&mdash;</p><p>&copy; Taavi Väänänen 2019. All rights reserved.</p><p>Made with
+<a href=https://gohugo.io class=link>Hugo</a>,
+<a href=https://tailwindcss.com class=link>Tailwind</a>
+and a text editor.</p><p>Send your e-mails to mailbox at this domain</p><p>Also view my profile at
+<a href=https://github.com/supertassu class=link>github</a>
+or
+<a href=https://keybase.io/tassu class=link>keybase</a>.</p></footer></div></body></html>
