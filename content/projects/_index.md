@@ -4,4 +4,4 @@ description: My recent projects
 hidden: true
 ---
 
-This section will be used.
+This section contains instructions for some of my projects.
