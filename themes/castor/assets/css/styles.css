@@ -21,6 +21,10 @@ hr {
         @apply py-2;
     }
 
+    & li > p {
+        @apply pt-0 inline-block;
+    }
+
     & a:not(:hover) {
         @apply underline;
     }
