@@ -16,7 +16,7 @@ I have a Lenovo S30 that is currently my main hypervisor. I bought it used from 
 | SSD | SanDisk SSD PLUS 1000GB |  |
 | HDD | Hitachi HDS721010CLA630 | basic 1TB HDD, Came free with the machine |
 
-I use [Proxmox](https://proxmox.com) as my hypervisor software. It supports clustering and all other useful stuff.
+I use [Proxmox](https://proxmox.com) as my hypervisor OS. It supports clustering and all other useful stuff.
 
 ## Naming scheme
 
