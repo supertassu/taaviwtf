@@ -8,13 +8,13 @@ weight: 3
 
 I have a Lenovo S30 that is currently my main hypervisor. I bought it used from [workstation4u.de](https://workstation4u.de). I'm planning to get another one for redundancy, but for now here are the specs:
 
-| Component | Description | Notes |
-|-|-|-|
-| CPU | Intel Xeon E5-2660 | 8c16t @ 2.20GHz |
-| RAM | 4x Samsung M393B2G70BH0 | total 64GB DDR3 RDIMM |
-| GPU | Some cheap one that I had lying around | Only needed for installing OS |
-| SSD | SanDisk SSD PLUS 1000GB |  |
-| HDD | Hitachi HDS721010CLA630 | basic 1TB HDD, Came free with the machine |
+Component | Description | Notes
+----------|-------------|------
+CPU | Intel Xeon E5-2660 | 8c16t @ 2.20GHz
+RAM | 4x Samsung M393B2G70BH0 | total 64GB DDR3 RDIMM
+GPU | Some cheap one that I had lying around | Only needed for installing OS
+SSD | SanDisk SSD PLUS 1000GB | -
+HDD | Hitachi HDS721010CLA630 | basic 1TB HDD, Came free with the machine
 
 I use [Proxmox](https://proxmox.com) as my hypervisor OS. It supports clustering and all other useful stuff.
 
