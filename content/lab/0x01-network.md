@@ -1,6 +1,6 @@
 ---
 title: "[0x01] The lab network"
-date: 2019-12-31
+date: 2019-02-01
 weight: 2
 ---
 
@@ -18,9 +18,14 @@ For Wi-Fi, I have an [Unifi UAP-AC-LITE](https://store.ui.com/products/unifi-ac-
 
 As mentioned previously, I use pfSense for routing. It's really simple to install: create an USB stick with the ISO file, boot router from it, install files, setup a LAN range and some other options (usually the defaults are fine).
 
-For my LAN, I use `10.20.0.1/24` (do not use `192.168.0.1/24` or `192.168.1.1/24` for reasons) and in there, I created a DHCP range (`10.20.0.[100-200]`). I use the LAN for management and networking devices (routers, switches) only and create VLANs for clients.
+For my LAN, I use `10.20.0.1/24` (do not use `192.168.0.1/24` or `192.168.1.1/24` for reasons). I use the LAN for management and networking devices (routers, switches) only and create VLANs for clients.
 
 I have four VLANs: `10` for users, `20` for the "lab" devices, `30` for IoT stuff and `40` for guests. They all exist in various ranges under `10.20.0.0/16`, usually either `10.20.[VLANID].0/24` or a `/21` so that `10.20.[VLANID].1` is in it. They all have some space for DHCP and some for static devices.
+
+I have two Windows Server 2019 VMs running DHCP. They are set up for a 50%-50% load balance and both can handle full load if the other needs to shut down. In pfSense, I set up the DHCP relay (under Services menu) to point to these 2 VMs for multi-VLAN operation. I use my AD domain controllers for DNS (just point DNS to DC IPs, it's really that simple) and a separate VM running Network Policy and Access Services for [802.1x](https://en.wikipedia.org/wiki/IEEE_802.1X) authentication for WiFi and Ethernet.
+
+![DHCP load balance settings](/img/dhcp-load-balance.png)
+{{< small "DHCP load balance settings" >}}
 
 ### Firewalling
 
@@ -40,7 +45,7 @@ On my switch (1st gen Unifi US-24), I have two trunk ports (upstream and for the
 On the Unifi AP that I have, I've setup a couple of networks:
 
 * my main network uses WPA Enterprise and authenticates user via AD NPAS to a VLAN (usually User VLAN)
-* the IoT network is used by the IoT devices that I have (a Google Home, Chromecast and some other devices)
+* the IoT network is used by the IoT devices that I have (a Google Home Mini, Chromecast and some other devices)
 * the Guest network is used by guests and segmented off so they can't access home/lab network
 
 ## VPNs

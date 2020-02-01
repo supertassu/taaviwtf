@@ -46,6 +46,10 @@ hr {
         background-color: theme('colors.gray.900') !important;
     }
 
+    & th, & td {
+        @apply text-left pr-4;
+    }
+
     & :not(pre) > code {
         @apply code;
     }

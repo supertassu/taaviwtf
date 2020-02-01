@@ -1,7 +1,7 @@
 ---
 title: "[0x00] Overview"
 weight: 1
-date: 2019-12-31 # last update date
+date: 2019-02-01 # last update date
 ---
 
 I use my lab to experiement or play around with stuff that I can't do elsewhere, for example enterprise networking and servers and all that kind of stuff.
@@ -12,7 +12,7 @@ This article will work as a directory for all articles related to my lab.
 I expect that at least the following parts will exist at some point:
 
 * [[0x01]]({{< ref "0x01-network.md" >}}) Network setup overview (routing, VLANs, etc)
-* Hypervisor setup and basic service overview
+* [[0x02]]({{< ref "0x02-hypervisor.md" >}}) Hypervisor setup and basic service overview
 * Detailed posts for some advanced services, such as
   * Puppet
   * Windows AD
