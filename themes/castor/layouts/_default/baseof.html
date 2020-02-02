@@ -11,6 +11,7 @@
         {{ .Site.Title }}
     </title>
 
+    <meta property="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
     <meta property="og:site_name" content="{{ .Site.Title }}">
     {{ template "_internal/opengraph.html" . }}
 
@@ -21,6 +22,8 @@
     {{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js") | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
     {{ end }}
+
+    <link rel="stylesheet" href="https://static.taavi.wtf/fonts/Iosevka/2.3.3/webfont.css" integrity="sha384-RwzDdzTh7Tv93UOPS680UCDcScN4WN20bOpM6USbcjFKx1Q2RsJrK8FLT/Ye0tno" crossorigin="anonymous">
 </head>
 
 <body class="bg-black text-white font-mono border-t-8 border-pink-700">
