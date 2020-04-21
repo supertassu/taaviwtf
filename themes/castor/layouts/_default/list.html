@@ -1,6 +1,6 @@
 {{ define "main" }}
     <div>
-        <h1 class="font-bold text-4xl text-gray-300">{{ .Title }}</h1>
+        <h1 class="text-4xl font-bold text-gray-300">{{ .Title }}</h1>
         
         <div class="rich-text">
             {{ .Content }}
@@ -8,27 +8,35 @@
     </div>
 
     {{ if ( gt ( len .Pages ) 0 ) }}
-        <p class="text-gray-700 text-xs">
+        {{ with .OutputFormats.Get "RSS" }}
+        <p>
+            <a href="{{ .RelPermalink }}" class="text-sm text-gray-400 link">
+                RSS feed
+            </a>
+        </p>
+        {{ end }}
+
+        <p class="text-xs text-gray-700">
             &mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
         </p>
     {{ end }}
 
     {{ range .Pages }}
         {{ if not .Params.hidden }}
-            <article class="text-gray-400 mb-4 mt-2">
-                <h1 class="font-bold text-3xl text-gray-300"><a href="{{ .Permalink }}" class="hover:underline">{{ .Title }}</a></h1>
+            <article class="mt-2 mb-4 text-gray-400">
+                <h1 class="text-3xl font-bold text-gray-300"><a href="{{ .Permalink }}" class="hover:underline">{{ .Title }}</a></h1>
                 
                 {{ if or (isset .Params "author") (ne (.PublishDate.Format "2006-01-02") "0001-01-01") }}
                     <p>
-                        <span class="text-pink-700">►</span> Written{{ if isset .Params "author" }} by <span class="text-white font-bold">{{ .Param "author" }}</span>{{ end }}{{ if ne (.PublishDate.Format "2006-01-02") "0001-01-01" }} on <span class="text-white font-bold">{{ .PublishDate.Format "January 2, 2006" }}</span>{{ end }}.
+                        <span class="text-pink-700">►</span> Written{{ if isset .Params "author" }} by <span class="font-bold text-white">{{ .Param "author" }}</span>{{ end }}{{ if ne (.PublishDate.Format "2006-01-02") "0001-01-01" }} on <span class="font-bold text-white">{{ .PublishDate.Format "January 2, 2006" }}</span>{{ end }}.
                     </p>
                 {{ end }}
 
-                <div class="rich-text mt-2">
+                <div class="mt-2 rich-text">
                     {{ .Summary }}
                 </div>
 
-                <a href="{{ .Permalink }}" class="link text-xs text-gray-300">Read in {{ .ReadingTime }} mins</a>
+                <a href="{{ .Permalink }}" class="text-xs text-gray-300 link">Read in {{ .ReadingTime }} mins</a>
             </article>
         {{ end }}
     {{ end }}

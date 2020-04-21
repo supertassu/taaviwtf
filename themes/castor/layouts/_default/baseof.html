@@ -24,15 +24,20 @@
     <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
     {{ end }}
 
+    {{ with .OutputFormats.Get "RSS" }}
+    <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ .Name }}" />
+    <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ .Name }}" />
+    {{ end }}
+
     <link rel="stylesheet" href="https://static.taavi.wtf/fonts/Iosevka/2.3.3/webfont.css">
 </head>
 
-<body class="bg-black text-white font-mono border-t-8 border-pink-700">
+<body class="font-mono text-white bg-black border-t-8 border-pink-700">
     <div class="container mx-auto max-md:px-4">
         <header class="w-full py-12">
             <nav class="flex justify-between">
                 <div>
-                    <a href="{{ .Site.Home.Permalink }}" class="bg-pink-700 p-2 hover:underline">
+                    <a href="{{ .Site.Home.Permalink }}" class="p-2 bg-pink-700 hover:underline">
                         {{ .Site.Title }}
                     </a>
                 </div>
@@ -41,7 +46,7 @@
                     {{ range .Site.Sections }}
                         {{ if not .Params.hidden }}
                         <a href="{{ .Permalink }}"
-                            class="link mx-2 hover:text-pink-400">{{ .Title }}</a>
+                            class="mx-2 link hover:text-pink-400">{{ .Title }}</a>
                         {{ end }}
                     {{ end }}
                 </div>
