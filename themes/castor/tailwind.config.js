@@ -1,4 +1,7 @@
 module.exports = {
+  purge: [
+    './themes/castor/**/*.html'
+  ],
   theme: {
     extend: {
       screens: {

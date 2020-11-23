@@ -3,69 +3,74 @@
 @tailwind utilities;
 
 .link:not(:hover) {
-    @apply underline;
+  @apply underline;
 }
 
 .code {
-    @apply p-1 bg-gray-900 text-pink-200;
+  @apply p-1 text-pink-200 bg-gray-900;
 }
 
 hr {
-    @apply text-gray-500;
+  @apply text-gray-500;
 }
 
 /* purgecss start ignore */
 .rich-text {
-    & p {
-        @apply py-2;
-    }
+  & p {
+    @apply py-2;
+  }
 
-    & li > p {
-        @apply pt-0 inline-block;
-    }
+  & li > p {
+    @apply inline-block pt-0;
+  }
 
-    & a:not(:hover) {
-        @apply underline;
-    }
+  & a:not(:hover) {
+    @apply underline;
+  }
 
-    & h1 {
-        @apply text-4xl text-gray-300 font-bold mt-2;
-    }
+  & h1 {
+    @apply mt-2 text-4xl font-bold text-gray-300;
+  }
 
-    & h2 {
-        @apply text-2xl text-gray-300 font-bold mt-2;
-    }
+  & h2 {
+    @apply mt-2 text-2xl font-bold text-gray-300;
+  }
 
-    & h3 {
-        @apply text-xl text-gray-300 font-bold mt-2;
-    }
+  & h3 {
+    @apply mt-2 text-xl font-bold text-gray-300;
+  }
 
-    & pre {
-        @apply p-2 bg-gray-900;
-        background-color: theme('colors.gray.900') !important;
-    }
+  & pre {
+    @apply p-2 bg-gray-900;
+    background-color: theme("colors.gray.900") !important;
+  }
 
-    & th, & td {
-        @apply text-left pr-4;
-    }
+  & th,
+  & td {
+    @apply pr-4 text-left;
+  }
 
-    & :not(pre) > code {
-        @apply code;
-    }
+  & :not(pre) > code {
+    @apply code;
+  }
 
-    & blockquote {
-        @apply my-2 p-1 pl-4 bg-gray-900 border-l-8 border-pink-600;
-    }
+  & blockquote {
+    @apply p-1 pl-4 my-2 bg-gray-900 border-l-8 border-pink-600;
+  }
 
-    & ul {
-        @apply list-none pl-2;
+  & ul {
+    @apply pl-2 list-none;
 
-        & li {
-            &::before {
-                @apply text-pink-600 font-bold pr-2;
-                content: ">";
-            }
-        }
+    & li {
+      &::before {
+        @apply pr-2 font-bold text-pink-600;
+        content: ">";
+      }
     }
+  }
+
+  & img {
+    @apply block;
+  }
 }
 /* purgecss end ignore */
