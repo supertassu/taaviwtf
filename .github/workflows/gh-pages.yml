@@ -20,7 +20,7 @@ jobs:
         run: npm install && cd themes/castor && npm install
 
       - name: Build
-        run: hugo --gc --minify --cleanDestinationDir
+        run: NODE_ENV=production hugo --gc --minify --cleanDestinationDir
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

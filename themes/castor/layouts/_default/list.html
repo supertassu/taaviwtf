@@ -1,7 +1,6 @@
 {{ define "main" }}
     <div>
         <h1 class="text-4xl font-bold text-gray-300">{{ .Title }}</h1>
-        
         <div class="rich-text">
             {{ .Content }}
         </div>
@@ -25,10 +24,10 @@
         {{ if not .Params.hidden }}
             <article class="mt-2 mb-4 text-gray-400">
                 <h1 class="text-3xl font-bold text-gray-300"><a href="{{ .Permalink }}" class="hover:underline">{{ .Title }}</a></h1>
-                
-                {{ if or (isset .Params "author") (ne (.PublishDate.Format "2006-01-02") "0001-01-01") }}
+
+                {{ if ne (.PublishDate.Format "2006-01-02") "0001-01-01" }}
                     <p>
-                        <span class="text-pink-700">►</span> Written{{ if isset .Params "author" }} by <span class="font-bold text-white">{{ .Param "author" }}</span>{{ end }}{{ if ne (.PublishDate.Format "2006-01-02") "0001-01-01" }} on <span class="font-bold text-white">{{ .PublishDate.Format "January 2, 2006" }}</span>{{ end }}.
+                        <span class="text-pink-700">►</span> Published on <span class="font-bold text-white">{{ .PublishDate.Format "January 2, 2006" }}</span>.
                     </p>
                 {{ end }}
 
@@ -36,7 +35,7 @@
                     {{ .Summary }}
                 </div>
 
-                <a href="{{ .Permalink }}" class="text-xs text-gray-300 link">Read in {{ .ReadingTime }} mins</a>
+                <a href="{{ .Permalink }}" class="text-xs text-gray-300 link">Read</a>
             </article>
         {{ end }}
     {{ end }}

@@ -1,6 +1,6 @@
 ---
 title: Blog
-description: This is the section I will put my general ramblings on.
+description: You have found the section that contains my very rare blog posts.
 ---
 
-This is the section I will put my general ramblings on.
+You have found the section that contains my very rare blog posts.
