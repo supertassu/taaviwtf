@@ -2,6 +2,4 @@
 
 This repository houses [my website](https://taavi.wtf).
 
-## Structure
-
-* `content/`
+See `LICENSE` and <https://taavi.wtf/licensing> for licensing information.
