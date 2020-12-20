@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-size: 20px;
+}
+
 .link:not(:hover) {
   @apply underline;
 }
@@ -10,11 +14,11 @@
   @apply p-1 text-pink-200 bg-gray-900;
 }
 
+/* purgecss start ignore */
 hr {
   @apply text-gray-500;
 }
 
-/* purgecss start ignore */
 .rich-text {
   & p {
     @apply py-2;
