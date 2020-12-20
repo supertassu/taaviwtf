@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .link:not(:hover) {
@@ -37,11 +37,11 @@ hr {
   }
 
   & h2 {
-    @apply mt-2 text-2xl font-bold text-gray-300;
+    @apply mt-8 text-2xl font-bold text-gray-300;
   }
 
   & h3 {
-    @apply mt-2 text-xl font-bold text-gray-300;
+    @apply mt-4 text-xl font-bold text-gray-300;
   }
 
   & pre {
