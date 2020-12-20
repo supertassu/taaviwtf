@@ -68,7 +68,7 @@ hr {
     & li {
       &::before {
         @apply pr-2 font-bold text-pink-600;
-        content: ">";
+        content: "›";
       }
     }
   }

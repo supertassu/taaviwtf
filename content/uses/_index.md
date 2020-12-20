@@ -45,7 +45,7 @@ I'm planning on writing a full blog post about my home network. As of writing th
 
 ### Web things
 
-* nginx as a generic web server, HAProxy when I only need to proxy things.
+* nginx as a generic web server, HAProxy on production when I only need to proxy things.
 * I currently dislike building most things with those JavaScript SPA frameworks. JavaScript is fine for adding interactivity
   (I mostly use [Alpine](https://github.com/alpinejs/alpine) for that) but I prefer rendering things server-side. As crazy as
   it sounds, I somewhat like modern PHP. I usually use [Laravel](https://laravel.com).
@@ -62,6 +62,8 @@ I'm planning on writing a full blog post about my home network. As of writing th
 
 * [The Lounge](https://thelounge.chat) for IRC. I have [ZNC](https://znc.in) between thelounge and IRC servers just so I can restart thelounge
   without causing join/leave spam on IRC and so I can sometimes use Irssi when I feel adventurous.
+  * I use the [Mininapse](https://github.com/MiniDigger/thelounge-theme-mininapse) theme with some
+    [custom styles](https://gist.github.com/supertassu/b4607043e81e616fce8104020211905a).
 * [Phabricator](https://phabricator.com) for issue tracking. I haven't been sold for its code review (at least yet) but I really like Maniphest,
   it's issue tracking application. GitHub issues is ok but I would like to see some sort of native issue relations.
 * [1Password](https://1password.com) as a password manager.
