@@ -9,6 +9,9 @@ module.exports = {
       },
       fontFamily: {
         mono: [
+          '"Iosevka Taavi Web"',
+          '"Iosevka Taavi"',
+          '"Iosevka"',
           '"Iosevka Web"',
           'Menlo',
           'Monaco',
