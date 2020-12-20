@@ -1,6 +1,7 @@
 ---
 title: Uses
 description: My preferred tech stack
+menus: main
 ---
 
 aka: My preferred tech stack.
@@ -67,3 +68,4 @@ I'm planning on writing a full blog post about my home network. As of writing th
 * [Phabricator](https://phabricator.com) for issue tracking. I haven't been sold for its code review (at least yet) but I really like Maniphest,
   it's issue tracking application. GitHub issues is ok but I would like to see some sort of native issue relations.
 * [1Password](https://1password.com) as a password manager.
+* [MediaWiki](https://mediawiki.org) for storing documents.

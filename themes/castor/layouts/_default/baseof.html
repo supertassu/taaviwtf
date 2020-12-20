@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
-        {{ if .Title }}
-        {{ .Title }} &ndash;
+        {{ if eq .Title "Home" }}
+            taavi.wtf
+        {{ else }}
+            {{ if .Title }}
+            {{ .Title }} &ndash;
+            {{ end }}
+            {{ .Site.Title }}
         {{ end }}
-        {{ .Site.Title }}
     </title>
 
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
@@ -43,15 +47,8 @@
                 </div>
 
                 <div class="flex">
-                    <a href="{{ .Site.Home.Permalink }}" class="mx-2 link hover:text-pink-400">
-                        Home
-                    </a>
-
-                    {{ range .Site.Sections }}
-                        {{ if not .Params.hidden }}
-                        <a href="{{ .Permalink }}"
-                            class="mx-2 link hover:text-pink-400">{{ .Title }}</a>
-                        {{ end }}
+                    {{ range .Site.Menus.main }}
+                        <a href="{{ .URL }}" class="mx-2 link hover:text-pink-400">{{ .Name }}</a>
                     {{ end }}
                 </div>
             </nav>

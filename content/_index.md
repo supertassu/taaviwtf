@@ -1,7 +1,11 @@
 ---
-title: Taavi Väänänen
+title: Home
 description: high school student, wikimedia contributor, dev/sysadmin
+menus:
+    main:
+        weight: 100
 ---
+
 # 👋 Hi, my name is {{< pink "Taavi" >}}.
 
 I'm a Finnish high school student, on my free time I play around with computers.
