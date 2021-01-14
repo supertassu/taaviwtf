@@ -28,8 +28,12 @@ hr {
     @apply inline-block pt-0;
   }
 
-  & a:not(:hover) {
-    @apply underline;
+  & a {
+    @apply text-gray-100;
+
+    &:not(:hover) {
+      @apply underline;
+    }
   }
 
   & h1 {

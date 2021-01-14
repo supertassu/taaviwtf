@@ -3,7 +3,7 @@
 
 name = "castor"
 license = "MIT"
-licenselink = ""
+licenselink = "https://opensource.org/licenses/MIT"
 description = ""
 homepage = "https://taavi.wtf"
 tags = ["taavi"]
