@@ -2,3 +2,6 @@ baseURL = "https://taavi.wtf"
 languageCode = "en-us"
 title = "taavi.wtf"
 theme = "castor"
+
+[markup.goldmark.renderer]
+  unsafe = true

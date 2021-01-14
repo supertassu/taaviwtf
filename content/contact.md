@@ -1,7 +1,6 @@
 ---
 title: Contact
-description: Choose any of the given method
-menus: main
+description: Choose any of the given methods
 ---
 
 ## By digital mail
