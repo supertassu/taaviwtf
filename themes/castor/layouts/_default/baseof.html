@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
     {{ end }}
     <link rel="preload" as="font" href="https://static.taavi.wtf/fonts/Iosevka/4.1.0/woff2/iosevka-taavi-regular.woff2" crossorigin>
+    <link rel="preload" as="font" href="https://static.taavi.wtf/fonts/Iosevka/4.1.0/woff2/iosevka-taavi-bold.woff2" crossorigin>
 
     {{ with .OutputFormats.Get "RSS" }}
     <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ .Name }}" />
