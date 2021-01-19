@@ -24,5 +24,11 @@ module.exports = {
     },
   },
   variants: {},
+  corePlugins: {
+    // disable useless features that bloat generated CSS
+    textOpacity: false,
+    backgroundOpacity: false,
+    borderOpacity: false,
+  },
   plugins: []
 }
