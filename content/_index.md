@@ -9,7 +9,7 @@ menus:
 # 👋 Hi, my name is {{< pink "Taavi" >}}.
 
 I'm a Finnish high school student, on my free time I play around with computers and [blog](/posts) rarely.
-My particular interests include open source software, self-hosting things and networking.
+My particular interests include FLOSS, self-hosting things and networking.
 I am a [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) contributor and an administrator on the documentation site.
 
 ## Contact
@@ -25,4 +25,6 @@ IRC
 
 ## Colophon
 
-This website is built using [Hugo](https://gohugo.io), uses [TailwindCSS](https://tailwindcss.com) and a [custom build]({{< ref "uses.md" >}}#essential-software) of the [Iosevka](https://typeof.net/Iosevka) font. The source code is hosted on [GitHub](https://github.com/supertassu/taaviwtf) (at least for now) and the site itself is hosted on GitHub Pages (no IPv6 support, boo!).
+This website is built using [Hugo](https://gohugo.io) and styled with [TailwindCSS](https://tailwindcss.com). It features a [custom build](https://static.taavi.wtf/fonts/Iosevka/config.toml.txt) of the [Iosevka](https://typeof.net/Iosevka) font. The source code is hosted on [GitHub](https://github.com/supertassu/taaviwtf) (at least for now) and the site itself is hosted on GitHub Pages (no IPv6 support, boo!).
+
+It uses zero JavaScript and just a couple of kilobytes of CSS styles. If anyone has any tips on how to reduce the size of the font files (about 2*300 kb), please let me know!
