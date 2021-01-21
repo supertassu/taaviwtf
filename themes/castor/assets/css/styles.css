@@ -44,7 +44,7 @@ hr {
 }
 
 .rich-text {
-  & p {
+  & > * {
     @apply py-2;
   }
 
@@ -101,7 +101,7 @@ hr {
   }
 
   & ul {
-    @apply pl-2 list-none;
+    @apply pl-4 list-none;
 
     & li {
       &::before {

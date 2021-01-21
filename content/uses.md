@@ -25,7 +25,6 @@ aka: My preferred tech stack.
 ## Hosting bits
 
 * [Proxmox](https://proxmox.com) for virtualisation at home.
-* DigitalOcean for the things that I want to have running in The Cloud(TM), mostly my IRC bouncer and some public services.
 * [Puppet](https://puppet.com) for configuration management
 * [Cumin](https://github.com/wikimedia/cumin) for running commands in many machines
 * I'm working on my own automation cookbook library, hopefully it's in a stage where I can publish it soon-ish.
@@ -50,7 +49,7 @@ I'm planning on writing a full blog post about my home network. As of writing th
 * nginx as a generic web server, HAProxy on production when I only need to proxy things.
 * I currently dislike building most things with those JavaScript SPA frameworks. JavaScript is fine for adding interactivity
   (I mostly use [Alpine](https://github.com/alpinejs/alpine) for that) but I prefer rendering things server-side. As crazy as
-  it sounds, I somewhat like modern PHP. I usually use [Laravel](https://laravel.com).
+  it sounds, I somewhat like modern PHP.
 * I wrote my own little utility, [nima](https://github.com/supertassu/nima), for adding sites to nginx config. It's somewhat
   inspired by [Valet](https://laravel.com/docs/8.x/valet) but it doesn't do anything else than handle Nginx config. My DNS server
   wildcards `*.test` and `*.*.test` to localhost.
