@@ -25,4 +25,4 @@ IRC
 
 ## Colophon
 
-This website is built using [Hugo](https://gohugo.io), uses [TailwindCSS](https://tailwindcss.com) and a [custom build]({{< ref "uses.md" >}}#essential-software) of the [Iosevka](https://typeof.net/Iosevka) font. The source code is hosted on [GitHub](https://github.com/supertassu/) (at least for now) and the site itself is hosted on GitHub Pages (no IPv6 support, boo!).
+This website is built using [Hugo](https://gohugo.io), uses [TailwindCSS](https://tailwindcss.com) and a [custom build]({{< ref "uses.md" >}}#essential-software) of the [Iosevka](https://typeof.net/Iosevka) font. The source code is hosted on [GitHub](https://github.com/supertassu/taaviwtf) (at least for now) and the site itself is hosted on GitHub Pages (no IPv6 support, boo!).

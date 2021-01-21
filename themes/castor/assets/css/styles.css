@@ -7,6 +7,7 @@
   font-weight: 400;
   font-stretch: normal;
   font-style: normal;
+  font-display: fallback;
   src: url("https://static.taavi.wtf/fonts/Iosevka/4.1.0/woff2/iosevka-taavi-regular.woff2")
       format("woff2"),
     url("https://static.taavi.wtf/fonts/Iosevka/4.1.0/ttf/iosevka-taavi-regular.ttf")
@@ -18,6 +19,7 @@
   font-weight: 700;
   font-stretch: normal;
   font-style: normal;
+  font-display: fallback;
   src: url("https://static.taavi.wtf/fonts/Iosevka/4.1.0/woff2/iosevka-taavi-bold.woff2")
       format("woff2"),
     url("https://static.taavi.wtf/fonts/Iosevka/4.1.0/ttf/iosevka-taavi-bold.ttf")
