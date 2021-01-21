@@ -34,8 +34,6 @@
     <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ .Name }}" />
     <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="{{ .Name }}" />
     {{ end }}
-
-    <link rel="stylesheet" href="https://static.taavi.wtf/fonts/Iosevka/4.1.0/iosevka-taavi.css">
 </head>
 
 <body class="font-mono text-white bg-black border-t-8 border-pink-700">
@@ -58,8 +56,8 @@
 
         {{- block "main" . }}{{- end }}
 
-        <footer class="mt-6 mb-6 text-xs text-gray-500">
-            <p class="text-gray-600">
+        <footer class="mt-6 mb-6 text-xs text-gray-400">
+            <p class="text-gray-600" aria-hidden="true">
                 &mdash;&mdash;&mdash;&mdash;&mdash;
             </p>
 
@@ -69,12 +67,6 @@
 
             <p>
                 <a href="/licensing/" class="link">licensing information</a>
-            </p>
-
-            <p>
-                <a href="https://github.com/supertassu" class="link">github</a>
-                &mdash;
-                <a href="/contact/" class="link">contact</a>
             </p>
         </footer>
     </div>

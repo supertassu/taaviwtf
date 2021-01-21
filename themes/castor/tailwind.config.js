@@ -22,6 +22,12 @@ module.exports = {
         ],
       },
     },
+    fontWeight: {
+      // override available font weights to make sure only loaded
+      // sizes are used - please keep in sync with styles.css
+      'normal': 400,
+      'bold': 700,
+    },
   },
   variants: {},
   corePlugins: {

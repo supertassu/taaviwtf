@@ -34,7 +34,8 @@ aka: My preferred tech stack.
 
 I'm planning on writing a full blog post about my home network. As of writing this I haven't gotten around into it yet.
 
-* I use [pfSense](https://pfsense.org) for routing. I really like it.
+* I have a separate page for my [dn42]({{< ref "../dn42.md" >}}) network.
+* I use [pfSense](https://pfsense.org) for routing on my home network.
 * Microsoft Active Directory for DNS, DHCP, and RADIUS (yes, I use enterprise authentication on my home network).
 * I'm currently using [UniFi](https://unifi-network.ui.com/) for switching and for my WiFi.
 

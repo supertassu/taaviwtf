@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Iosevka Taavi Web";
+  font-display: swap;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  src: url("https://static.taavi.wtf/fonts/Iosevka/4.1.0/woff2/iosevka-taavi-regular.woff2")
+      format("woff2"),
+    url("https://static.taavi.wtf/fonts/Iosevka/4.1.0/ttf/iosevka-taavi-regular.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "Iosevka Taavi Web";
+  font-display: swap;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  src: url("https://static.taavi.wtf/fonts/Iosevka/4.1.0/woff2/iosevka-taavi-bold.woff2")
+      format("woff2"),
+    url("https://static.taavi.wtf/fonts/Iosevka/4.1.0/ttf/iosevka-taavi-bold.ttf")
+      format("truetype");
+}
+
 html {
   font-size: 18px;
 }
@@ -11,7 +35,7 @@ html {
 }
 
 .code {
-  @apply p-1 text-pink-200 bg-gray-900;
+  @apply p-1 text-pink-300 bg-gray-900;
 }
 
 /* purgecss start ignore */
@@ -89,6 +113,16 @@ hr {
 
   & img {
     @apply block;
+  }
+
+  & dl {
+    & dt {
+      @apply mt-1 font-bold;
+    }
+
+    & dd {
+      @apply mb-1 ml-4;
+    }
   }
 }
 /* purgecss end ignore */
