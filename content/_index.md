@@ -6,7 +6,7 @@ menus:
         weight: 100
 ---
 
-# 👋 Hi, my name is {{< pink "Taavi" >}}.
+# {{< pink "o/" >}} Hi, I am {{< pink "Taavi Väänänen" >}}.
 
 I'm a Finnish high school student, on my free time I play around with computers and [blog](/posts) rarely.
 My particular interests include FLOSS, self-hosting things and networking.
