@@ -23,6 +23,9 @@ PGP
 IRC
 : `Majavah` on Freenode
 
+Mastodon
+: <a href="https://mastodon.technology/@taavi" rel="me">@taavi@mastodon.technology</a>
+
 ## Colophon
 
 This website is built using [Hugo](https://gohugo.io) and styled with [TailwindCSS](https://tailwindcss.com). It features a [custom build](https://static.taavi.wtf/fonts/Iosevka/config.toml.txt) of the [Iosevka](https://typeof.net/Iosevka) font. The source code is hosted on [GitHub](https://github.com/supertassu/taaviwtf) (at least for now) and the site itself is hosted on GitHub Pages (no IPv6 support, boo!).
