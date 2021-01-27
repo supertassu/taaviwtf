@@ -15,10 +15,10 @@ I am a [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki) contributor and an 
 ## Contact
 
 Email
-: [hi@taavi.wtf](mailto:hi@taavi.wtf)
+: <a href="mailto:hi@taavi.wtf" rel="me">hi@taavi.wtf</a>
 
 PGP
-: `3465 469C B19D 61E5 E2EA 8AFB EF24 2F70 9F91 2FBE`, available on [keys.openpgp.org](https://keys.openpgp.org/vks/v1/by-fingerprint/3465469CB19D61E5E2EA8AFBEF242F709F912FBE)
+: `3465 469C B19D 61E5 E2EA 8AFB EF24 2F70 9F91 2FBE`, available on <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/3465469CB19D61E5E2EA8AFBEF242F709F912FBE" rel="pgpkey authn">keys.openpgp.org</a>
 
 IRC
 : `Majavah` on Freenode
