@@ -6,7 +6,7 @@ menus:
         weight: 100
 ---
 
-# {{< pink "o/" >}} Hi, I am {{< pink "Taavi Väänänen" >}}.
+# {{< pink "o/" >}} Taavi Väänänen
 
 I'm a Finnish high school student, on my free time I play around with computers and [blog](/posts) rarely.
 My particular interests include FLOSS, self-hosting things and networking.
@@ -18,7 +18,8 @@ Email
 : <a href="mailto:hi@taavi.wtf" rel="me">hi@taavi.wtf</a>
 
 PGP
-: `3465 469C B19D 61E5 E2EA 8AFB EF24 2F70 9F91 2FBE`, available on <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/3465469CB19D61E5E2EA8AFBEF242F709F912FBE" rel="pgpkey authn">keys.openpgp.org</a>
+: `3465 469C B19D 61E5 E2EA 8AFB EF24 2F70 9F91 2FBE`, available from <a href="https://taavi.wtf/pgp.asc" rel="pgpkey authn">taavi.wtf/pgp.asc</a> and
+common keyservers such as [keys.openpgp.org](https://keys.openpgp.org/vks/v1/by-fingerprint/3465469CB19D61E5E2EA8AFBEF242F709F912FBE)
 
 IRC
 : `Majavah` on Freenode
