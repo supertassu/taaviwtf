@@ -18,7 +18,7 @@ Email
 : <a href="mailto:hi@taavi.wtf" rel="me">hi@taavi.wtf</a>
 
 PGP
-: `3465 469C B19D 61E5 E2EA 8AFB EF24 2F70 9F91 2FBE`, available from <a href="https://taavi.wtf/pgp.asc" rel="pgpkey authn">taavi.wtf/pgp.asc</a> and
+: `3465 469C B19D 61E5 E2EA 8AFB EF24 2F70 9F91 2FBE`, available from <a href="https://taavi.wtf/pgp.txt" rel="pgpkey authn">taavi.wtf/pgp.txt</a> and
 common keyservers such as [keys.openpgp.org](https://keys.openpgp.org/vks/v1/by-fingerprint/3465469CB19D61E5E2EA8AFBEF242F709F912FBE)
 
 IRC
