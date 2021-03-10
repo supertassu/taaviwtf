@@ -1,0 +1,16 @@
+AS4242423270 / TAAVI-AS
+Peering information
+
+Contact details available from the dn42 registry. Details for individual nodes
+are located below, if I've told you something else use that instead of
+individual listed below.
+
+## uc-fi-hel1
+This is hosted on UpCloud's FI-HEL1 cluster.
+
+ASN:                  AS4242423270
+Public address:       uc-fi-hel1.dn42.taavi.wtf
+Wireguard port:       2<last 4 digits of AS>
+Wireguard public key: DrBmn9Em0yKqatZJ8wE+Uvv8uzyRzR1bTBQUZplhIXQ=
+dn42 addresses:       172.22.130.129 / fd96:70f6:b174::1
+Link-local:           fe80::42:42:1
