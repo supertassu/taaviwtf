@@ -38,6 +38,25 @@ html {
   @apply p-1 text-pink-300 bg-gray-900;
 }
 
+.taavi-fadein {
+  animation-delay: 200ms;
+  animation-duration: 1s;
+  animation-name: taavi-fadein;
+  animation-fill-mode: both;
+}
+
+@keyframes taavi-fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* purgecss start ignore */
 hr {
   @apply text-gray-500;
