@@ -4,7 +4,7 @@
 
         {{ if ne (.PublishDate.Format "2006-01-02") "0001-01-01" }}
             <p>
-                <span class="text-pink-700">►</span> Published on <span class="font-bold text-white">{{ .PublishDate.Format "January 2, 2006" }}</span>.
+                Published on <span class="font-bold text-pink-300">{{ .PublishDate.Format "January 2, 2006" }}</span>.
             </p>
         {{ end }}
 
