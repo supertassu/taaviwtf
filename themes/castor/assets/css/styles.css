@@ -38,11 +38,12 @@ html {
   @apply p-1 text-pink-300 bg-gray-900;
 }
 
-.taavi-fadein {
-  animation-delay: 200ms;
-  animation-duration: 1s;
-  animation-name: taavi-fadein;
-  animation-fill-mode: both;
+@media (prefers-reduced-motion: no-preference) {
+  .taavi-fadein {
+    animation-duration: 0.8s;
+    animation-name: taavi-fadein;
+    animation-fill-mode: both;
+  }
 }
 
 @keyframes taavi-fadein {
