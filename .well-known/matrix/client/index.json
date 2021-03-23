@@ -1,0 +1,5 @@
+{
+    "m.homeserver": {
+        "baseurl": "https://matrix.taavi.wtf/"
+    }
+}
