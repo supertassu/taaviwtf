@@ -146,5 +146,9 @@ hr {
       @apply mb-1 ml-4;
     }
   }
+
+  & strong {
+    @apply font-bold text-white;
+  }
 }
 /* purgecss end ignore */
