@@ -37,20 +37,22 @@
     {{ end }}
 </head>
 
-<body class="font-mono text-white bg-black border-t-8 border-pink-700">
-    <div class="container mx-auto max-md:px-4">
+<body class="font-mono text-white border-t-8 border-pink-700 bg-gray-990">
+    <div class="mx-4 md:mx-12 md:max-w-4xl max-md:px-4">
         <header class="w-full py-12">
-            <nav class="flex justify-between">
-                <div>
-                    <a href="{{ .Site.Home.Permalink }}" class="p-2 bg-gradient-to-tr from-pink-500 to-pink-700 hover:from-pink-600 hover:to-pink-800 hover:underline">
+            <nav class="flex flex-wrap">
+                <div class="mb-4">
+                    <a href="{{ .Site.Home.Permalink }}"
+                        class="p-2 mr-2 bg-gradient-to-tr from-pink-500 to-pink-700 hover:from-pink-600 hover:to-pink-800 hover:underline">
                         {{ .Site.Title }}
                     </a>
                 </div>
 
-                <div class="flex">
-                    {{ range .Site.Menus.main }}
-                        <a href="{{ .URL }}" class="mx-2 link hover:text-pink-400">{{ .Name }}</a>
-                    {{ end }}
+                <div class="flex flex-wrap">
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main }}
+                    <a href="{{ .URL }}" class="mx-2 hover:underline {{ if not ($currentPage.IsMenuCurrent "main" .) }} hover:{{ end }}text-pink-400">{{ .Name }}</a>
+                {{ end }}
                 </div>
             </nav>
         </header>

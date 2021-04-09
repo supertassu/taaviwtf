@@ -1,7 +1,9 @@
 ---
 title: Uses
 description: My preferred tech stack
-menus: main
+menus:
+  main:
+    name: '/uses'
 ---
 
 aka: My preferred tech stack.

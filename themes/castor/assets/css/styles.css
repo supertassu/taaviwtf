@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-size: 16px;
+}
+
+@screen md {
+  html {
+    font-size: 18px;
+  }
+}
+
 @font-face {
   font-family: "Iosevka Taavi Web";
   font-weight: 400;
@@ -24,10 +34,6 @@
       format("woff2"),
     url("https://static.taavi.wtf/fonts/Iosevka/4.1.0/ttf/iosevka-taavi-bold.ttf")
       format("truetype");
-}
-
-html {
-  font-size: 18px;
 }
 
 .link:not(:hover) {
@@ -73,11 +79,7 @@ hr {
   }
 
   & a {
-    @apply text-gray-100;
-
-    &:not(:hover) {
-      @apply underline;
-    }
+    @apply text-blue-200 hover:underline;
   }
 
   & h1,
@@ -87,15 +89,15 @@ hr {
   }
 
   & h1 {
-    @apply mt-2 text-4xl;
+    @apply mt-2 text-2xl;
   }
 
   & h2 {
-    @apply mt-6 text-2xl;
+    @apply mt-6 text-xl;
   }
 
   & h3 {
-    @apply mt-4 text-xl;
+    @apply mt-4 text-lg;
   }
 
   & pre {

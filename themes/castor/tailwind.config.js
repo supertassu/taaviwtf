@@ -1,5 +1,9 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
+  mode: 'jit',
   purge: [
+    './posts/**/*.md',
     './themes/castor/**/*.html'
   ],
   theme: {
@@ -20,6 +24,13 @@ module.exports = {
           '"Courier New"',
           'monospace',
         ],
+      },
+      colors: {
+        'gray': {
+          ...colors.gray,
+          '990': '#070707',
+        },
+        'true-gray': colors.trueGray,
       },
     },
     fontWeight: {
