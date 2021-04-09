@@ -1,7 +1,6 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-  mode: 'jit',
   purge: [
     './posts/**/*.md',
     './themes/castor/**/*.html'
