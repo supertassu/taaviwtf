@@ -25,7 +25,7 @@
     {{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/dev/postcss.config.js") }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
     {{ else }}
-    {{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js") | minify }}
+    {{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js") | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
     {{ end }}
     <link rel="preload" as="font" href="https://static.taavi.wtf/fonts/Iosevka/4.1.0/woff2/iosevka-taavi-regular.woff2" crossorigin>
