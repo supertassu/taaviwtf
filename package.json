@@ -1,4 +1,6 @@
 {
+    "name": "taavi.wtf",
+    "private": "true",
     "devDependencies": {
         "postcss": "^8.2.9",
         "postcss-cli": "^8.3.1"
