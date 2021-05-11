@@ -8,7 +8,7 @@ description: high school student, wikimedia contributor, dev/sysadmin
 **Hi!** I'm a Finnish high school student, on my free time I play around with computers
 and [blog](/posts) rarely. My particular interests include FLOSS, self-hosting
 things and networking. I am a [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki)
-contributor and an administrator on the documentation site.
+contributor and a [Toolforge](https://toolforge.org) administrator.
 
 ## Contact
 
