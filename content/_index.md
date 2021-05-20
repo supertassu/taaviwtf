@@ -21,7 +21,7 @@ PGP
 common keyservers such as [keys.openpgp.org](https://keys.openpgp.org/vks/v1/by-fingerprint/3465469CB19D61E5E2EA8AFBEF242F709F912FBE).
 
 IRC
-: `Majavah` on Freenode
+: `Majavah` on libera.chat
 
 Mastodon
 : <a href="https://mastodon.technology/@taavi" rel="me">@taavi@mastodon.technology</a>
