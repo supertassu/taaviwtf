@@ -1,6 +1,10 @@
 ---
 title: Home
 description: high school student, wikimedia contributor, dev/sysadmin
+menus:
+    main:
+        weight: 500
+        name: "about"
 ---
 
 # {{< pink "o/" >}} Taavi Väänänen
