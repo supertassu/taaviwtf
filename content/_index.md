@@ -7,22 +7,22 @@ menus:
         name: "about"
 ---
 
-# {{< pink "o/" >}} Taavi Väänänen
+# Taavi Väänänen
 
-**Hi!** I'm a Finnish high school student, on my free time I play around with computers
-and [blog](/posts) rarely. My particular interests include FLOSS, self-hosting
-things and networking. I am a [MediaWiki](https://www.mediawiki.org/wiki/MediaWiki)
-contributor and a [Toolforge](https://toolforge.org) administrator.
+Hi! My name is **Taavi** (he/him), I am a Finnish high school student. My
+projects include maintaining [Toolforge](https://toolforge.org) infrastructure,
+experiementing with networking and servers on my
+[homelab]({{< ref "homelab.md" >}}) and contributing to
+[MediaWiki](https://mediawiki.org).
 
-## Contact
+## Me elsewhere
 
 Email
 : <a href="mailto:hi@taavi.wtf" rel="me">hi@taavi.wtf</a>
 
-PGP
-: `3465 469C B19D 61E5 E2EA 8AFB EF24 2F70 9F91 2FBE`, available from
-<a href="https://taavi.wtf/pgp.txt" rel="pgpkey authn">taavi.wtf/pgp.txt</a> and
-common keyservers such as [keys.openpgp.org](https://keys.openpgp.org/vks/v1/by-fingerprint/3465469CB19D61E5E2EA8AFBEF242F709F912FBE).
+: PGP users: my key is `3465 469C B19D 61E5 E2EA 8AFB EF24 2F70 9F91 2FBE`, which
+is available from <a href="https://taavi.wtf/pgp.txt" rel="pgpkey authn">taavi.wtf/pgp.txt</a>
+and common keyservers such as [keys.openpgp.org](https://keys.openpgp.org/vks/v1/by-fingerprint/3465469CB19D61E5E2EA8AFBEF242F709F912FBE).
 
 IRC
 : `Majavah` on libera.chat
