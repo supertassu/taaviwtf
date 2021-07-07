@@ -15,20 +15,18 @@ experiementing with networking and servers on my
 [homelab]({{< ref "homelab.md" >}}) and contributing to
 [MediaWiki](https://mediawiki.org).
 
-## Me elsewhere
+## Contact me
 
-Email
-: <a href="mailto:hi@taavi.wtf" rel="me">hi@taavi.wtf</a>
+The best way to talk to me is via IRC, I'm `majavah` on [libera.chat](https://libera.chat/).
 
-: PGP users: my key is `3465 469C B19D 61E5 E2EA 8AFB EF24 2F70 9F91 2FBE`, which
+You can also e-mail me, unless I've told you to use some other address (I have
+way too many) feel free to use <a href="mailto:hi@taavi.wtf" rel="me">hi@taavi.wtf</a>.
+If you use PGP, my key is `3465 469C B19D 61E5 E2EA 8AFB EF24 2F70 9F91 2FBE`, which
 is available from <a href="https://taavi.wtf/pgp.txt" rel="pgpkey authn">taavi.wtf/pgp.txt</a>
 and common keyservers such as [keys.openpgp.org](https://keys.openpgp.org/vks/v1/by-fingerprint/3465469CB19D61E5E2EA8AFBEF242F709F912FBE).
 
-IRC
-: `Majavah` on libera.chat
-
-Mastodon
-: <a href="https://mastodon.technology/@taavi" rel="me">@taavi@mastodon.technology</a>
+I'm also <a href="https://mastodon.technology/@taavi" rel="me">@taavi@mastodon.technology</a>
+on Mastodon (but I toot fairly infrequently).
 
 ## Colophon
 

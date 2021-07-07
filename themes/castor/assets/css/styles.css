@@ -41,7 +41,7 @@ html {
 }
 
 .code {
-  @apply p-1 text-pink-300 bg-gray-900;
+  @apply p-1 text-yellow-100 bg-gray-900;
 }
 
 @media (prefers-reduced-motion: no-preference) {
