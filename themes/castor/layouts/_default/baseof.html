@@ -28,8 +28,8 @@
     {{ $style := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js") | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
     {{ end }}
-    <link rel="preload" as="font" href="https://static.taavi.wtf/fonts/Iosevka/9.0.0/woff2/iosevka-taavi-regular.woff2" crossorigin>
-    <link rel="preload" as="font" href="https://static.taavi.wtf/fonts/Iosevka/9.0.0/woff2/iosevka-taavi-bold.woff2" crossorigin>
+    <link rel="preload" as="font" href="https://taavi.wtf/fonts/iosevka-taavi-regular-subset.woff2" crossorigin>
+    <link rel="preload" as="font" href="https://taavi.wtf/fonts/iosevka-taavi-bold-subset.woff2" crossorigin>
 
     {{ with .OutputFormats.Get "RSS" }}
     <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ .Name }}" />

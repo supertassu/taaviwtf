@@ -18,10 +18,7 @@ html {
   font-stretch: normal;
   font-style: normal;
   font-display: fallback;
-  src: url("https://static.taavi.wtf/fonts/Iosevka/9.0.0/woff2/iosevka-taavi-regular.woff2")
-      format("woff2"),
-    url("https://static.taavi.wtf/fonts/Iosevka/9.0.0/ttf/iosevka-taavi-regular.ttf")
-      format("truetype");
+  src: url("/fonts/iosevka-taavi-regular-subset.woff2") format("woff2");
 }
 
 @font-face {
@@ -30,10 +27,7 @@ html {
   font-stretch: normal;
   font-style: normal;
   font-display: fallback;
-  src: url("https://static.taavi.wtf/fonts/Iosevka/9.0.0/woff2/iosevka-taavi-bold.woff2")
-      format("woff2"),
-    url("https://static.taavi.wtf/fonts/Iosevka/9.0.0/ttf/iosevka-taavi-bold.ttf")
-      format("truetype");
+  src: url("/fonts/iosevka-taavi-bold-subset.woff2") format("woff2");
 }
 
 .link:not(:hover) {
