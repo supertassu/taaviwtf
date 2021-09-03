@@ -9,11 +9,10 @@ menus:
 
 # Taavi Väänänen
 
-Hi! My name is **Taavi** (he/him), I am a Finnish high school student. My
-projects include maintaining [Toolforge](https://toolforge.org) infrastructure,
-experiementing with networking and servers on my
-[homelab]({{< ref "homelab.md" >}}) and contributing to
-[MediaWiki](https://mediawiki.org).
+Hi! My name is **Taavi** (he/him), I am a Finnish high school student.
+My main projects are [Toolforge](https://toolforge.org) and
+[MediaWiki](https://mediawiki.org), although I try to contribute to other
+free software projects if I get the opportunity.
 
 ## Contact me
 
@@ -28,6 +27,9 @@ and common keyservers such as [keys.openpgp.org](https://keys.openpgp.org/vks/v1
 I'm also <a href="https://mastodon.technology/@taavi" rel="me">@taavi@mastodon.technology</a>
 on Mastodon (but I toot fairly infrequently).
 
+Most of my new programming projects are on <a href="https://git.sr.ht/~taavi/" rel="me">sr.ht</a>,
+some older projects are still on [GitHub](https://github.com/supertassu/).
+
 ## Colophon
 
 This website is built using [Hugo](https://gohugo.io) and styled with
@@ -37,6 +39,7 @@ This website is built using [Hugo](https://gohugo.io) and styled with
 [GitHub](https://github.com/supertassu/taaviwtf) (at least for now) and the site
 itself is hosted on GitHub Pages (no IPv6 support, boo!).
 
-It uses zero JavaScript and just a couple of kilobytes of CSS styles. If anyone
-has any tips on how to reduce the size of the font files (about 2*300 kb),
-please let me know!
+It uses zero JavaScript and just a couple of kilobytes of CSS styles.
+Most of the page size currently comes to the custom font, which takes
+about 25kb to fully load, even with most unnecessary characters
+[removed](https://dev.to/platformos/optimizing-font-files-for-modern-web-3jm8).
