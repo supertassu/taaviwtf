@@ -19,6 +19,7 @@ html {
   font-style: normal;
   font-display: fallback;
   src: url("/fonts/iosevka-taavi-regular-subset.woff2") format("woff2");
+  unicode-range: U+21-5F,U+61-7D,U+C4,U+C5,U+D6,U+E4,U+E5,U+F6;
 }
 
 @font-face {
@@ -28,6 +29,7 @@ html {
   font-style: normal;
   font-display: fallback;
   src: url("/fonts/iosevka-taavi-bold-subset.woff2") format("woff2");
+  unicode-range: U+21-5F,U+61-7D,U+C4,U+C5,U+D6,U+E4,U+E5,U+F6;
 }
 
 .link:not(:hover) {
